@@ -5,13 +5,14 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { Observable } from 'rxjs/Observable';
 import {MdToolbar} from '@angular2-material/toolbar';
 import {MdButton} from '@angular2-material/button';
+import { MdSidenavLayout , MdSidenav } from '@angular2-material/sidenav';
 
 @Component({
   moduleId: module.id,
   selector: 'ng2-boilerplate-router-app',
   templateUrl: 'ng2-boilerplate-router.component.html',
   styleUrls: ['ng2-boilerplate-router.component.css'],
-  directives: [ROUTER_DIRECTIVES,MdToolbar, MdButton],
+  directives: [ROUTER_DIRECTIVES,MdToolbar, MdButton, MdSidenavLayout, MdSidenav],
   providers: [ROUTER_PROVIDERS],
   pipes: []
 })

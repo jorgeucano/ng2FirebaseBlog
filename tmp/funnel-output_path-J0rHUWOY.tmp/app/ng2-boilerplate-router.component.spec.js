@@ -1,0 +1,1 @@
+/Users/jorgeucano/Documents/ng2FirebaseBlog/tmp/broccoli_type_script_compiler-cache_path-BFBXEkmf.tmp/src/app/ng2-boilerplate-router.component.spec.js
