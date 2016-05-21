@@ -1,3 +1,11 @@
-<p>
-  list works!
-</p>
+<h1 class="textCenter">
+  Welcome to NG2Firebase Blog
+<h1>
+
+<md-card class="cardToWeb" *ngFor="let item of list | async" (click)="onSelect(item.link)">
+     <md-card-header>
+        <img md-card-avatar src="{{item.imagen}}">
+        <md-card-title>{{item.titulo}}</md-card-title>
+        <md-card-subtitle>{{item.copete}}</md-card-subtitle>
+     </md-card-header>
+</md-card>

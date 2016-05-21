@@ -3,19 +3,18 @@ import { HomeComponent } from './+home';
 import { ContactComponent } from './+contact';
 import { ListComponent } from './+list';
 import { AboutComponent } from './+about';
+import { PostComponent } from './+post';
 import { Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { Observable } from 'rxjs/Observable';
 import {MdToolbar} from '@angular2-material/toolbar';
-import {MdButton} from '@angular2-material/button';
-import { MdSidenavLayout , MdSidenav } from '@angular2-material/sidenav';
 
 @Component({
   moduleId: module.id,
   selector: 'ng2-boilerplate-router-app',
   templateUrl: 'ng2-boilerplate-router.component.html',
   styleUrls: ['ng2-boilerplate-router.component.css'],
-  directives: [ROUTER_DIRECTIVES,MdToolbar, MdButton, MdSidenavLayout, MdSidenav],
+  directives: [ROUTER_DIRECTIVES, MdToolbar],
   providers: [ROUTER_PROVIDERS],
   pipes: []
 })
@@ -24,7 +23,8 @@ import { MdSidenavLayout , MdSidenav } from '@angular2-material/sidenav';
   {path: '/home', component: HomeComponent},
   {path: '/contact', component: ContactComponent},
   {path: '/list', component: ListComponent},
-  {path: '/about', component: AboutComponent}
+  {path: '/about', component: AboutComponent},
+   {path: '/post/:id', component: PostComponent}
 ])
 
 export class Ng2BoilerplateRouterAppComponent {
@@ -33,6 +33,12 @@ export class Ng2BoilerplateRouterAppComponent {
   item: Observable<any>;
   items: FirebaseListObservable<any[]>;
   afi:any;
+
+  changeUrl(link: string){
+    alert("link");
+    //this.router.navigate(['/post', link]);
+  }
+
   constructor(af: AngularFire) {
     this.afi = af;
     this.items = af.database.list('/CONTACTO');

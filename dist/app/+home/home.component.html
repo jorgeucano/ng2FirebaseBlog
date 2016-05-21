@@ -1,3 +1,13 @@
-<p>
-  home works!
-</p>
+<h1 class="textCenter">
+  Welcome to NG2Firebase Blog
+<h1>
+<md-card class="cardToWeb" *ngFor="let item of homes | async">
+   <md-card-header>
+      <img md-card-avatar src="{{item.imagen}}">
+      <md-card-title>{{item.titulo}}</md-card-title>
+      <md-card-subtitle>{{item.copete}}</md-card-subtitle>
+   </md-card-header>
+   <md-card-content>
+        {{item.texto}}
+   </md-card-content>
+</md-card>
