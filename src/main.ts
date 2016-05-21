@@ -10,6 +10,6 @@ if (environment.production) {
 bootstrap(Ng2BoilerplateRouterAppComponent,
    [
      FIREBASE_PROVIDERS,
-     defaultFirebase('https://ng2fire.firebaseio.com')
+     defaultFirebase('https://ng2firebaseblog.firebaseio.com/')
    ]
 );

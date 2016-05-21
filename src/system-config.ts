@@ -43,6 +43,20 @@ cliSystemConfigPackages['angularfire2'] = {
   main: 'angularfire2'
 }
 
+
+// Angular Material 2 Packages to load.
+var _materialPackages = [
+  'core', 'toolbar', 'button', 'card', 'checkbox', 'icon', 'input', 'list', 'progress-bar',
+  'progress-circle', 'radio', 'sidenav'
+];
+
+_materialPackages.forEach(function(item) {
+  // All Material 2 components are prefixed with  @angular2-material and use
+  // the components name as entry point.
+  cliSystemConfigPackages['@angular2-material/' + item] = { main: item };
+});
+
+
 /** Type declaration for ambient System. */
 declare var System: any;
 
@@ -53,7 +67,8 @@ System.config({
     'rxjs': 'vendor/rxjs',
     'main': 'main.js',
     'firebase': 'vendor/firebase/lib/firebase-web.js',
-    'angularfire2': 'vendor/angularfire2'
+    'angularfire2': 'vendor/angularfire2',
+    '@angular2-material': 'vendor/@angular2-material'
   },
   packages: cliSystemConfigPackages
 });
