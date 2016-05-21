@@ -1,8 +1,8 @@
 # ng2FirebaseBlog
 
-The ng2FirebaseBlog is a GNU proyect.
+The ng2FirebaseBlog is a GNU project.
 
-For up this proyect you need npm & angular-cli
+For up this project you need npm & angular-cli
 
 Change "defaultFirebase('https://ng2firebaseblog.firebaseio.com/')" in src/main.ts to your firebase url
 
