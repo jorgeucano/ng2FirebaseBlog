@@ -24,6 +24,10 @@ var barrels = [
     'app',
     'app/shared',
     'app/+routerdash',
+    'app/+home',
+    'app/+list',
+    'app/+contact',
+    'app/+about',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {

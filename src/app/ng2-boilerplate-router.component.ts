@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { RouterdashComponent } from './+routerdash';
+import { HomeComponent } from './+home';
+import { ContactComponent } from './+contact';
+import { ListComponent } from './+list';
+import { AboutComponent } from './+about';
 import { Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { Observable } from 'rxjs/Observable';
@@ -17,7 +20,11 @@ import { MdSidenavLayout , MdSidenav } from '@angular2-material/sidenav';
   pipes: []
 })
 @Routes([
-  {path: '/routerdash', component: RouterdashComponent}
+  {path: '/', component: HomeComponent},
+  {path: '/home', component: HomeComponent},
+  {path: '/contact', component: ContactComponent},
+  {path: '/list', component: ListComponent},
+  {path: '/about', component: AboutComponent}
 ])
 
 export class Ng2BoilerplateRouterAppComponent {

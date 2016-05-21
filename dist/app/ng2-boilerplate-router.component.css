@@ -29,3 +29,35 @@
   border-bottom: 1px solid #ebebeb;
   padding-top: 1%;
 }
+
+.content{
+  width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.devsite-utility-footer {
+    background: #455a64;
+}
+.devsite-nav {
+    font-size: 13px;
+}
+.devsite-utility-footer-nav {
+    color: #fff;
+    overflow: auto;
+    padding: 14px 24px;
+}
+.devsite-full-site-width, .devsite-toast-fill {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.devsite-utility-footer-nav {
+    color: #fff;
+    overflow: auto;
+    padding: 14px 24px;
+}
+
+.devsite-utility-footer-nav a {
+    color: #fff;
+    line-height: 36px;
+}

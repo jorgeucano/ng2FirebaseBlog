@@ -9,7 +9,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var _routerdash_1 = require('./+routerdash');
+var _home_1 = require('./+home');
+var _contact_1 = require('./+contact');
+var _list_1 = require('./+list');
+var _about_1 = require('./+about');
 var router_1 = require('@angular/router');
 var angularfire2_1 = require('angularfire2');
 var toolbar_1 = require('@angular2-material/toolbar');
@@ -42,7 +45,11 @@ var Ng2BoilerplateRouterAppComponent = (function () {
             pipes: []
         }),
         router_1.Routes([
-            { path: '/routerdash', component: _routerdash_1.RouterdashComponent }
+            { path: '/', component: _home_1.HomeComponent },
+            { path: '/home', component: _home_1.HomeComponent },
+            { path: '/contact', component: _contact_1.ContactComponent },
+            { path: '/list', component: _list_1.ListComponent },
+            { path: '/about', component: _about_1.AboutComponent }
         ]), 
         __metadata('design:paramtypes', [angularfire2_1.AngularFire])
     ], Ng2BoilerplateRouterAppComponent);

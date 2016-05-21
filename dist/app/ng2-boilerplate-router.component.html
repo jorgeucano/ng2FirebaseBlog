@@ -2,19 +2,20 @@
   ng2firebaseblog
 </md-toolbar>
 <center class="menu">
-  <a class="linkmenu" [routerLink]="['routerdash']">Home</a>
-  <a class="linkmenu" [routerLink]="['routerdash']">Home</a>
-  <a class="linkmenu" [routerLink]="['routerdash']">Home</a>
-  <a class="linkmenu" [routerLink]="['routerdash']">Home</a>
+  <a class="linkmenu" [routerLink]="['home']">Home</a>
+  <a class="linkmenu" [routerLink]="['list']">List</a>
+  <a class="linkmenu" [routerLink]="['contact']">Contact</a>
+  <a class="linkmenu" [routerLink]="['about']">about</a>
 </center>
-<router-outlet></router-outlet>
-
-<ul>
-  <li *ngFor="let item of items | async">
-     {{item.user_id}} - {{ item.name }} <button md-raised-button  (click)=remove(item.$key)>Remove</button>
-   </li>
-</ul>
-<input #name>
-<input #num>
-
-<button (click)=addToFirebase(name.value,num.value)>Add</button>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+<footer class="devsite-utility-footer">
+  <nav class="devsite-utility-footer-nav devsite-nav devsite-full-site-width">
+    <span class="devsite-utility-footer-links">
+      <a >Condiciones</a>
+      &nbsp; | &nbsp;
+      <a class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Privacy Link">Privacidad</a>
+    </span>
+  </nav>
+</footer>
