@@ -1,5 +1,30 @@
-# ng2-boilerplate-router
-
-boilerplate for simple example of router
-# ng2-boilerplate-firebase
 # ng2FirebaseBlog
+
+The ng2FirebaseBlog is a GNU proyect.
+
+For up this proyect you need npm & angular-cli
+
+Change "defaultFirebase('https://ng2firebaseblog.firebaseio.com/')" in src/main.ts to your firebase url
+
+in terminar type
+- npm install
+- ng build
+- ng serve
+
+
+
+#------------------------------------------------------------------------
+
+# ng2FirebaseBlog
+
+ng2FirebaseBlog Es un proyecto GNU.
+
+Para levantar el proyecto necesitaras npm y angular-cli
+
+Cambia "defaultFirebase('https://ng2firebaseblog.firebaseio.com/')" en src/main.ts por tu url de firebase
+
+y en la terminal tipea
+
+- npm install
+- ng build
+- ng serve
