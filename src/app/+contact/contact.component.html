@@ -1,3 +1,12 @@
-<p>
-  contact works!
-</p>
+<center>
+  <h1>Contact</h1>
+</center>
+<md-card class="cardToWeb">
+   <md-card-content>
+        <input type="text" #name placeholder="name">
+        <br>
+        <input type="text" #email placeholder="email">
+        <br>
+        <button md-raised-button (click)=addToFirebase(name.value,email.value)>ADD ME</button>
+   </md-card-content>
+</md-card>

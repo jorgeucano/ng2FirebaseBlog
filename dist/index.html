@@ -21,13 +21,16 @@
   -->
 </head>
 <body>
-  <ng2-boilerplate-router-app>Loading...</ng2-boilerplate-router-app>
+  <ng2-boilerplate-router-app>
+    <center>
+      <img src="loader.gif" alt="" />
+    </center>
+  </ng2-boilerplate-router-app>
 
   <script src="vendor/es6-shim/es6-shim.js"></script>
   <script src="vendor/reflect-metadata/Reflect.js"></script>
   <script src="vendor/systemjs/dist/system.src.js"></script>
   <script src="vendor/zone.js/dist/zone.js"></script>
-
   <script>
     System.import('system-config.js').then(function () {
       System.import('main');

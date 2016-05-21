@@ -9,19 +9,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var angularfire2_1 = require('angularfire2');
+var button_1 = require('@angular2-material/button');
+var card_1 = require('@angular2-material/card');
 var ContactComponent = (function () {
-    function ContactComponent() {
+    function ContactComponent(af) {
+        this.afi = af;
     }
     ContactComponent.prototype.ngOnInit = function () {
+    };
+    ContactComponent.prototype.addToFirebase = function (nameVar, emailVar) {
+        var itemObservable = this.afi.database.list('/EMAILS');
+        if (itemObservable.push({ name: nameVar, email: emailVar })) {
+            alert(name);
+        }
     };
     ContactComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'app-contact',
             templateUrl: 'contact.component.html',
-            styleUrls: ['contact.component.css']
+            styleUrls: ['contact.component.css'],
+            directives: [router_1.ROUTER_DIRECTIVES, button_1.MdButton, card_1.MdCard, card_1.MdCardHeader],
+            providers: [router_1.ROUTER_PROVIDERS],
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [angularfire2_1.AngularFire])
     ], ContactComponent);
     return ContactComponent;
 }());
