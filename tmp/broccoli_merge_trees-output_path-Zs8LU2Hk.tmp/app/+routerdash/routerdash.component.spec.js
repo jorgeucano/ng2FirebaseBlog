@@ -1,0 +1,1 @@
+/Users/jorgeucano/Documents/examples/quickstart/ng2-boilerplate-firebase/tmp/broccoli_type_script_compiler-cache_path-8puzIoiU.tmp/src/app/+routerdash/routerdash.component.spec.js

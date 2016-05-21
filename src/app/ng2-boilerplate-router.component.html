@@ -1,0 +1,17 @@
+<h1>
+  {{title}}
+</h1>
+<nav>
+  <a [routerLink]="['routerdash']">routerdash</a>
+</nav>
+<router-outlet></router-outlet>
+
+<ul>
+  <li *ngFor="let item of items | async">
+     {{item.user_id}} - {{ item.name }} <button (click)=remove(item.$key)>Remove</button>
+   </li>
+</ul>
+<input #name>
+<input #num>
+
+<button (click)=addToFirebase(name.value,num.value)>Add</button>
