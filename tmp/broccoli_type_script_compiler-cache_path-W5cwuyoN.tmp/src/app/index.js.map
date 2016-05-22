@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":";AAAA,4BAA0B,eAAe,CAAC;AAAlC,gDAAkC;AAC1C,iDAA+C,oCAAoC,CAAC;AAA5E,+GAA4E","sourcesContent":["export {environment} from './environment';\nexport {Ng2BoilerplateRouterAppComponent} from './ng2-boilerplate-router.component';\n"]}

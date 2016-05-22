@@ -8,6 +8,7 @@ Change "defaultFirebase('https://ng2firebaseblog.firebaseio.com/')" in src/main.
 
 in terminar type
 - npm install
+- npm install angularfire2 firebase --save
 - ng build
 - ng serve
 
@@ -26,5 +27,6 @@ Cambia "defaultFirebase('https://ng2firebaseblog.firebaseio.com/')" en src/main.
 y en la terminal tipea
 
 - npm install
+- npm install angularfire2 firebase --save
 - ng build
 - ng serve

@@ -16,3 +16,19 @@ md-card-content {
     margin-bottom: 16px;
     text-align: left;
 }
+
+:host(.page1Container) {
+      display: inline-block;
+      position: fixed;
+      width: 100%;
+      -webkit-transition: all ease-in 0.5s;
+      transition: all ease-in 0.5s;
+  }
+
+  :host(.page1Container.ng-enter) {
+      transform: rotateX(-180deg)
+  }
+
+  :host(.page1Container.ng-enter-active) {
+      transform: rotateX(0deg)
+  }

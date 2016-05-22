@@ -32,7 +32,7 @@ export class ListComponent implements OnInit {
     console.log(link);
     //return this.ng2.changeUrl(link);
   }
-  
+
   ngOnInit() {
   }
 }

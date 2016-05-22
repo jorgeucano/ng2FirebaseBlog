@@ -19,3 +19,19 @@ md-card-content {
 a{
   text-decoration: none;
 }
+
+:host(.page2Container) {
+      position: fixed;
+      display: inline-block;
+      width: 100%;
+      -webkit-transition: all ease-in-out 0.5s;
+      transition: all ease-in-out 0.5s;
+  }
+
+  :host(.page2Container.ng-enter) {
+      transform: rotateZ(180deg)
+  }
+
+  :host(.page2Container.ng-enter-active) {
+      transform: rotateZ(0deg)
+  }
