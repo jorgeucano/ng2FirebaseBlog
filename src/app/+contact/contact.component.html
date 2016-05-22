@@ -3,10 +3,14 @@
 </center>
 <md-card class="cardToWeb">
    <md-card-content>
-        <input type="text" #name placeholder="name">
-        <br>
-        <input type="text" #email placeholder="email">
-        <br>
-        <button md-raised-button (click)=addToFirebase(name.value,email.value)>ADD ME</button>
+          <md-input class="demo-full-width" placeholder="Company" #company></md-input>
+          <img src="https://lh6.googleusercontent.com/-Lt-M6JeX5yE/AAAAAAAAAAI/AAAAAAAAABY/e5FNQ4fEHr0/photo.jpg" alt="" />
+          <br>
+         <md-input placeholder="Name" maxLength="100" class="demo-full-width" #name></md-input>
+         <md-input placeholder="E-mail" maxLength="100" class="demo-full-width" #email></md-input>
+         <br>
+         <md-input placeholder="Sugerencias" maxLength="500" class="demo-full-width width100" #sugerencias></md-input>
+         <br>
+        <button md-raised-button (click)=addToFirebase(company.name,name.value,email.value,sugerencias.value)>ADD ME</button>
    </md-card-content>
 </md-card>

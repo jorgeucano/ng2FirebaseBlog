@@ -4,13 +4,14 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { Observable } from 'rxjs/Observable';
 import {MdButton} from '@angular2-material/button';
 import { MdCard, MdCardHeader} from '@angular2-material/card';
+import { MdInput } from '@angular2-material/input';
 
 @Component({
   moduleId: module.id,
   selector: 'app-contact',
   templateUrl: 'contact.component.html',
   styleUrls: ['contact.component.css'],
-  directives: [ROUTER_DIRECTIVES, MdButton, MdCard, MdCardHeader],
+  directives: [ROUTER_DIRECTIVES, MdButton, MdCard, MdCardHeader, MdInput],
   providers: [ROUTER_PROVIDERS],
 })
 export class ContactComponent implements OnInit {
@@ -26,9 +27,9 @@ export class ContactComponent implements OnInit {
     this.afi = af;
   }
 
-  addToFirebase(nameVar: string, emailVar:string):void{
+  addToFirebase(companyVar:string, nameVar: string, emailVar:string, sugerenciasVar:string):void{
     const itemObservable = this.afi.database.list('/EMAILS');
-    if (itemObservable.push({ name: nameVar, email: emailVar})) {
+    if (itemObservable.push({ company:companyVar, name: nameVar, email: emailVar, sugerencias:sugerenciasVar})) {
       alert(name);
     }
   }
